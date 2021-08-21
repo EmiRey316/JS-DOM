@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlatitaYa</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="multimedia/icono.png">
+
+    <!--CSS de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <!--Estilo general del sitio-->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <!--Inicio de navbar de Bootstrap-->
+        <nav class="navbar navbar-expand-lg container-fluid navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="multimedia/menuLogo.png" alt="Logo del sitio" class="menuLogo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav row text-center" style="width: 50%;">
+                        <li class="nav-item col-4">
+                            <a class="nav-link text-black" href="simulador.html">Simulador</a>
+                        </li>
+                        <li class="nav-item col-4">
+                            <a class="nav-link text-black" href=#>Cuotas</a>
+                        </li>
+                        <li class="nav-item col-4">
+                            <a class="nav-link text-black" href=#>Clientes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Fin de navbar de Bootstrap-->
+    </header>
+
+    <main>
+        <!-- Creo un formulario pero pensando en agregarlo en el desafío de la próxima clase, como comentó el profe.
+        <form action="">
+            <label for="tipoPrestamo" class="form-label">Seleccione el tipo de préstamo: </label>
+            <select name="tipoPrestamo" id="tipoPrestamo">
+                <option value="simple">Préstamo Simple</option>
+                <option value="americano">Préstamo Americano</option>
+            </select>
+
+            <label for="rangoMonto" class="form-label">Seleccione el monto:</label>
+            <input type="range" class="form-range" id="rangoMonto" min="1000" max="100000" step="1000" value="1000">
+
+            <label for="rangoCuotas" class="form-label">Seleccione la cantidad de cuotas</label>
+            <input type="range" class="form-range" id="rangoCuotas" min="1" max="24" step="1" value="1">
+        </form>
+        -->
+
+        <section id="sectionTablaAmorticacion">
+            <h1>Resultado de la simulación:</h1>
+            <div id="contenedorTipoPrestamo"></div>
+            <div id="contenedorTablaAmortizacion">
+                <h2>Tabla de Amortización:</h2>
+                <ul id="tablaAmortizacionListado"></ul>
+            </div>
+            <p id="pagoTotal"></p>
+        </section>
+    </main>
+    
+
+    <!--Script de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!--Script general del sitio-->
+    <script src="js/main.js"></script>
+</body>
+</html>

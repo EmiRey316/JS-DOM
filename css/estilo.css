@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*Estilos generales del sitio e imports del resto de archivos .scss. Este archvio será compilado en css*/
+/*Imports del resto de archivos con estilos particulares*/
+/*Paleta de colores*/
+/*Variables para media queries*/
+/*Estilos para el menú superior o navegador del sitio*/
+header {
+  background-color: #FC2C3C;
+  margin-bottom: 50px; }
+  header .navbar-brand {
+    padding: 0px; }
+  header .menuLogo {
+    width: 230px;
+    height: auto;
+    vertical-align: middle; }
+  header .navbar {
+    padding: 0px; }
+
+#dropdownPrestamos {
+  background-color: #FC2C3C !important; }
+
+@media screen and (min-width: 992px) {
+  #homeMain {
+    margin: 0px 50px;
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(2, 1fr);
+    grid-template-areas: "Titulo ." "Simple Americano";
+    gap: 20px; }
+    #homeMain #contenedorTitulo {
+      grid-area: Titulo;
+      padding-left: 50px; }
+    #homeMain #contenedorPrestamoSimple {
+      grid-area: Simple; }
+    #homeMain #contenedorPrestamoAmericano {
+      grid-area: Americano; } }
